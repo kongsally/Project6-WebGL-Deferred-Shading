@@ -10,6 +10,7 @@ varying vec3 v_position;
 varying vec3 v_normal;
 varying vec2 v_uv;
 
+#pragma name copy_frag
 void main() {
 
 	 // color/albedo

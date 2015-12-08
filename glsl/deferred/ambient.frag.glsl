@@ -10,6 +10,7 @@ uniform sampler2D u_depth;
 
 varying vec2 v_uv;
 
+#pragma name ambient
 void main() {
     
     vec4 gb0 = texture2D(u_gbufs[0], v_uv); 

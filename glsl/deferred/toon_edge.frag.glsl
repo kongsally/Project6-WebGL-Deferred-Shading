@@ -7,6 +7,7 @@ uniform float u_width;
 uniform float u_height;
 varying vec2 v_uv;
 
+#pragma name toon_edge
 void main() {
     
     float depth = texture2D(u_depth, v_uv).x;

@@ -13,6 +13,7 @@ varying vec3 v_position;
 varying vec3 v_normal;
 varying vec2 v_uv;
 
+#pragma name copy_vertex
 void main() {
     gl_Position = u_cameraMat * vec4(a_position, 1.0);
     v_position = a_position;

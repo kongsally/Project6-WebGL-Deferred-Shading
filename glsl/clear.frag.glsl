@@ -5,6 +5,7 @@ precision highp int;
 
 #define NUM_GBUFFERS 4
 
+#pragma name clear
 void main() {
     for (int i = 0; i < NUM_GBUFFERS; i++) {
         gl_FragData[i] = vec4(0.0);

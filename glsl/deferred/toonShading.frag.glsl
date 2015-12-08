@@ -25,7 +25,7 @@ vec3 applyNormalMap(vec3 geomnor, vec3 normap) {
     return normap.y * surftan + normap.x * surfbinor + normap.z * geomnor;
 }
 
-
+#pragma name toon_shading
 void main() {
     vec4 gb0 = texture2D(u_gbufs[0], v_uv); // albedo
     vec4 gb1 = texture2D(u_gbufs[1], v_uv); // position
