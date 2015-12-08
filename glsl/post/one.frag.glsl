@@ -7,6 +7,7 @@ varying vec2 v_uv;
 
 const vec4 SKY_COLOR = vec4(0.01, 0.14, 0.42, 1.0);
 
+#pragma name post_one
 void main() {
     vec4 color = texture2D(u_color, v_uv);
    
