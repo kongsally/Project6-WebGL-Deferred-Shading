@@ -11,6 +11,7 @@ uniform sampler2D u_depth;
 varying vec2 v_uv;
 
 #pragma name ambient
+#pragma profile start 0
 void main() {
     
     vec4 gb0 = texture2D(u_gbufs[0], v_uv); 
@@ -26,3 +27,4 @@ void main() {
 
     gl_FragColor = vec4(0.3 * colmap, 1);  
 }
+#pragma profile end 0

@@ -27,6 +27,7 @@ vec3 applyNormalMap(vec3 geomnor, vec3 normap) {
 //https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_shading_model
 
 #pragma name blinnphong-pointlight
+#pragma profile start 0
 void main() {
     vec4 gb0 = texture2D(u_gbufs[0], v_uv); // albedo
     vec4 gb1 = texture2D(u_gbufs[1], v_uv); // position
@@ -68,3 +69,4 @@ void main() {
 
     gl_FragColor = vec4(color * attenuation, 1);  
 }
+#pragma profile end 0
